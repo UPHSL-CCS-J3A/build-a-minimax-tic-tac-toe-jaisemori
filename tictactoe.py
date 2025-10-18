@@ -120,11 +120,11 @@ def play_game():
         current = ai if current == human else human
     w = winner(board)
     if w == human:
-        print("🎉 You win!")
+        print("You win!")
     elif w == ai:
-        print("🤖 AI wins!")
+        print("Lmao xd AI outsmarted you")
     else:
-        print("😐 It's a draw!")
+        print("It's a draw!")
 
 def compare_search(board, me='O', opp='X'):
     global minimax_nodes, alphabeta_nodes
@@ -144,4 +144,5 @@ if __name__ == "__main__":
     play = input("Start game? (y/n): ").strip().lower().startswith('y')
     if play:
         play_game()
+
 
